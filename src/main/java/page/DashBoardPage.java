@@ -17,8 +17,8 @@ public class DashBoardPage {
 	}
 	
 	@FindBy(how = How.XPATH, using = "/html/body/div[1]/section/div/div[2]/div/div/header/div/strong") WebElement DASHBOARD_HEADER_ELEMENT; 
-	@FindBy(how = How.XPATH, using = "html/body/div[1]/aside[1]/div/nav/ul[2]/li/a/span") WebElement CUSTOMERS_MENU_ELEMENT;
-	@FindBy(how = How.XPATH, using = "//*[@id=\"customers\"]/li[2]/a/span") WebElement ADD_CUSTOMERS_MENU_ELEMENT;
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/aside[1]/div/nav/ul[2]/li[2]/a/span") WebElement CUSTOMERS_MENU_ELEMENT;
+	@FindBy(how = How.XPATH, using = "//*[@id=\"customers\"]/li[2]/a") WebElement ADD_CUSTOMERS_MENU_ELEMENT;
 	
 	public String validateDashboardPage() {
 		String dashboardHeaderText = DASHBOARD_HEADER_ELEMENT.getText();
